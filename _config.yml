@@ -8,8 +8,8 @@ permalink:        /blog/:year/:month/:day/:title
 
 # Setup
 title:            "Marco Fargetta's blog"
-tagline:          'A Metro theme for Jekyell'
-description:      'A Sample blog using Jekyll Metro'
+tagline:          ''
+description:      'My personal blog using Jekyll Metro'
 url:              'http://fmarco76.github.io'
 #url:              'http://localhost:4000'
 
