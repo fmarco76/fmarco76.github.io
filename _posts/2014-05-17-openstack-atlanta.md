@@ -6,8 +6,8 @@ tags:
 - OpenStack
 ---
 
-As usually I reported about the talks I joined during the
-participation at the [summit in
+I have to do a report about the talks I joined during the
+participation at the [OpenStack summit in
 Atlanta.](https://www.openstack.org/summit/openstack-summit-atlanta-2014/){:target="_blank"}
 
 For this time I created several slides with the main points of each talk and the slide
