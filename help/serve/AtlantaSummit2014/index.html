@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Report on OpenStack Summit - Atlanta 2014</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Marco Fargetta">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/common.css">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<script src="js/qrcode.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+	  <script>
+
+	    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	    ga('create', 'UA-51273549-1', 'fmarco76.github.io');
+	    ga('send', 'pageview');
+
+
+
+	  </script>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section id="front">
+					<h1>OpenStack Wrap-Up</h1>
+					<h3>Report from Atlanta Summit 2014</h3>
+					<p>
+						<small>Created by <i>Marco Fargetta</i> / <a href="mailto:marco.fargetta@ct.infn.it">marco.fargetta@ct.infn.it</a></small>
+					</p>
+				</section>
+			  <section id="link">
+			    <p class="small"><a href="http://fmarco76.github.io/AtlantaSummit2014/" id="this">http://fmarco76.github.io/AtlantaSummit2014/</a></p>
+			    <div class="qrcode" id="qrcode-this"/>
+			    <script type="text/javascript">
+			      new QRCode(document.getElementById("qrcode-this"), {
+			                                    text: "http://fmarco76.github.io/AtlantaSummit2014",
+			                                    width: 512,
+			                                    height: 512
+			      });
+			    </script>
+			  </section>
+
+			  <section id="followed">
+			    <h2>Followed topics</h2>
+			    <ul>
+			      <li>Summit
+				<ul class="sublist">
+				  <li>PaaS tools
+				  <li>Tempest
+				  <li>Boson
+				  <li>Heat
+				  <li class="fragment highlight-red">Federation
+				  <li>Keynotes
+				  <li>Become a contributor
+				</ul>
+			      <li>Juno Design Summit
+				<ul class="sublist fragment highlight-blue">
+				  <li>Keystone
+				  <li>Horizon
+				</ul>
+			    </ul>
+			  </section>
+
+			  <section id="summit">
+			    <section id="intro-summit">
+			    <h1>Information from the Summit</h1>
+			    </section>
+			    <section id="paas1">
+			      <h2>Two PaaS solutions</h2>
+			      <ul>
+				<li>OpenShift
+				<li>CloudFoundry
+			      </ul>
+			    </section>
+			    <section id="paas2">
+			      <p>
+				Both solution allow to deploy
+				pre-configured services for the user
+				and provide tools to access these
+				services from the application
+			      </p>
+			      <p>
+				OpenShift seems very good but it is
+				not public
+				available, <span class="highlight">it
+				require licence from RedHat<span>
+			      </p>
+			    </section>
+			    <section id="boson">
+			      <h2>Boson: the "quota manager" (back to the reservation)</h2>
+			      <p>The new component <b>Boson</b> will
+			      introduce the idea of reservation and
+			      advance reservation</p>
+			      <p>Before any operation a user must
+			      allocate resources in Boson and the
+			      following request will use these resources</p>
+			      <p class="fragment highlight-red">Not
+			      plan yet for the integration in the
+			      release</p>
+			    </section>
+			    <section id="juju">
+			      <h2>JuJu: the canonical orchestrator</h2>
+			      <p>JuJu is an orchestrator developed by
+			      Canonical with the aim of automatise the
+			      deploy of multiple related service in
+			      different infrastructure</p>
+			      <p>The demo was very impressive and the
+			      deploy in different clouds
+			      and <spam class="fragment
+			      highlight-blue">different system
+			      including windows guests</spam></p>
+			      <p>Free available (both client and server)</p>
+			      <a href="https://juju.ubuntu.com/">https://juju.ubuntu.com/</a>
+			    </section>
+
+			    <section id="devstack1">
+			      <h2>How to become a developer</h2>
+			      <p>The official procedure explained</p> 
+			      <p>It is better to look at <a href="http://youtu.be/mT2yC6ll5Qk">http://youtu.be/mT2yC6ll5Qk</a>)</p>
+			    </section>
+			    <section id="destack2">
+			      <h2>DevStack: Create a development environment</h2>
+			      <p>Official documentation explain how to
+			      deploy each component for
+			      development</p>
+			      <p><b>DevStack</b> is a project
+			      providing a tool to download the source
+			      code and configure all the components in
+			      a single machine for the developers</p>
+			      <p>Available at <a href="http://devstack.org">http://devstack.org</a></p>
+			    </section>
+			  </section>
+
+			  <section id="junosummit">
+			    <section id="intro-junosummit">
+			      <h1>Information from the Juno Design Summit</h1>
+			    </section>
+			    <section id="horizon">
+			      <h2>Horizon modularity</h2>
+			      <p>Customise Horizon require to modify the code base making it very difficult to maintain</p>
+			      <p>Future version will move the
+			      interface
+			      to <a href="https://angularjs.org/">angular.js</a>
+			      and will implement a sort of module to
+			      hot deploy (like modern CMS)</p>
+			      <p class="fragment highlight-blue">Time schedule for the migration not defined</p>
+			    </section>
+			    <section id="keystone1">
+			      <h2>Keystone</h2>
+			      <p>Identity federation implemented but
+			      only for command line tools and not
+			      usable for web application</p>
+			      <p>The proposed solution uses only the
+			      SAML ECP profile</p>
+			      <p>Work with Merek Denis from CERN to
+			      finalise the integration with SAML
+			      ECP</p>
+			      <p class="fragment
+			      highlight-red">Solution for web
+			      application proposed yesterday, waiting
+			      for response</p>
+			    </section>
+			    <section id="keystone2">
+			      <h2>Current work in Keystone</h2>
+			      <p>Hierarchy Keystone: authentication
+			      provided by an external source which may
+			      include another keystone</p>
+			      <p>New Token model based on PKI to
+			      reduce the communication overhead with
+			      keystone to validate the token</p>
+			      <p>Split in two related server: one for
+			      the authentication and the other for the
+			      authorisation. The first could become
+			      optional and the second needed to run
+			      the infrastructure</p>
+			    </section>
+			    <section id="fee">
+			      <h2>Contributors visibility</h2>
+			      <p>Contributors do not pay fee for OpenStack Summits</p>
+			      <p class="fragment highlight-blue">Requested an approved commit in the last and/or previous version of OpenStack</p>
+			      <p>A lot of work opportunities</p>
+			    </section>
+			  </section>
+			  <section id="summary">
+			    <h1>Summit Videos Available</h1>
+			    <div><a target="_blank" href="http://www.youtube.com/watch?list=UUQ74G2gKXdpwZkXEsclzcrA&awesm=awe.sm_iKVqq&v=mNg2-tOFsGQ">http://www.youtube.com/watch?list=UUQ74G2gKXdpwZkXEsclzcrA&awesm=awe.sm_iKVqq&v=mNg2-tOFsGQ</a></div>
+			  </section>
+			  <section id="question">
+
+			    <img width="1600" src="http://cdn.business2community.com/wp-content/uploads/2013/02/Girl-with-Hand-Raised-2010-112.jpg" alt="Questions?">
+
+			  </section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				// theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				// transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+			        transition: 'concave',
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

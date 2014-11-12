@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Marco Fargetta's blog</title>
+ <link href="http://blog-olakara.rhcloud.com/atom.xml" rel="self"/>
+ <link href="http://blog-olakara.rhcloud.com/"/>
+ <updated>2014-11-12T12:51:56+01:00</updated>
+ <id>http://blog-olakara.rhcloud.com</id>
+ <author>
+   <name></name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>OpenStack Summit 2014 in Atlanta - Report</title>
+   <link href="http://blog-olakara.rhcloud.com/blog/2014/05/17/openstack-atlanta"/>
+   <updated>2014-05-17T17:30:00+02:00</updated>
+   <id>http://blog-olakara.rhcloud.com/blog/2014/05/17/openstack-atlanta</id>
+   <content type="html">&lt;p&gt;As usually I reported about the talks I joined during the
+participation at the &lt;a href=&quot;https://www.openstack.org/summit/openstack-summit-atlanta-2014/&quot;&gt;summit in
+Atlanta.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;For this time I created several slides with the main points of each talk and the slide
+are available at (http://fmarco76.github.io/AtlantaSummit2014).&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
