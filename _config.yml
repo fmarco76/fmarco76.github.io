@@ -10,8 +10,8 @@ permalink:        /blog/:year/:month/:day/:title
 title:            "Marco Fargetta's blog"
 tagline:          'A Metro theme for Jekyell'
 description:      'A Sample blog using Jekyll Metro'
-#url:              'http://blog-olakara.rhcloud.com'
 url:              'http://fmarco76.github.io'
+#url:              'http://localhost:4000'
 
 # Author Details
 author:         'Marco Fargetta'
@@ -21,7 +21,7 @@ author:         'Marco Fargetta'
 #gplus:          'https://plus.google.com/100425464897246255887/'
 
 # Google Analytics
-#gahandler: 'UA-52149651-1'
+gahandler: 'UA-51273549-1'
 
 # Blog Configurations
 paginate: 2 # Posts per page on the blog index
