@@ -10,7 +10,8 @@ permalink:        /blog/:year/:month/:day/:title
 title:            "Marco Fargetta's blog"
 tagline:          'A Metro theme for Jekyell'
 description:      'A Sample blog using Jekyll Metro'
-url:              'http://blog-olakara.rhcloud.com'
+#url:              'http://blog-olakara.rhcloud.com'
+url:              'http://fmarco76.github.io'
 
 # Author Details
 author:         'Marco Fargetta'
