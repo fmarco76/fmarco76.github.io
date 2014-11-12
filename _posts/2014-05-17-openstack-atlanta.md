@@ -8,7 +8,7 @@ tags:
 
 As usually I reported about the talks I joined during the
 participation at the [summit in
-Atlanta.](https://www.openstack.org/summit/openstack-summit-atlanta-2014/)
+Atlanta.](https://www.openstack.org/summit/openstack-summit-atlanta-2014/){:target="_blank"}
 
 For this time I created several slides with the main points of each talk and the slide
-are available at [http://fmarco76.github.io/slides/AtlantaSummit2014](http://fmarco76.github.io/slides/AtlantaSummit2014).
+are available at [http://fmarco76.github.io/slides/AtlantaSummit2014](http://fmarco76.github.io/slides/AtlantaSummit2014){:target="_blank"}.
