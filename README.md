@@ -11,10 +11,10 @@ You can see the live demo of this theme at [http://blog-olakara.rhcloud.com](htt
 - <https://github.com/fmarco76>
 
 ## Attribution
-The thema used for the blog is based on Jekill metro thema developed by:
+The thema used for the blog is based on Jekill HMFAYSAL Notepad thema developed by:
 
-*Abdel Raoof Olakara*
-- <https://github.com/olakara>
+*Hossain Mohd Faysal*
+- <https://github.com/hmfaysal/Notepad>
 
 
 ## License

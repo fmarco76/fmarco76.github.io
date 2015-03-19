@@ -2,8 +2,10 @@
 layout: post
 title:  OpenStack Summit 2014 in Paris - Report 
 date:   2014-11-12 15:30:00
-tags:
-- OpenStack
+tags: [OpenStack]
+category: Conference and Workshops
+comments: true
+share: true
 ---
 
 During the [OpenStack summit in
