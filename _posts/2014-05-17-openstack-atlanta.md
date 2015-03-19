@@ -2,8 +2,10 @@
 layout: post
 title:  OpenStack Summit 2014 in Atlanta - Report 
 date:   2014-05-17 15:30:00
-tags:
-- OpenStack
+tags: [OpenStack]
+category: Conference and Workshops
+comments: true
+share: true
 ---
 
 I have to do a report about the talks I joined during the
