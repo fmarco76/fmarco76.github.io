@@ -1,14 +1,14 @@
 ---
 layout: page
 permalink: /about/index.html
-title: Hossain Mohd Faysal
-tags: [Hossain, Mohd, Faysal, hmfaysal]
+title: Marco Fargetta 
+tags: [Marco, Fargetta, fmarco76]
 imagefeature: fourseasons.jpg
 chart: true
 ---
 <figure>
-  <img src="{{ site.url }}/images/hossain-faysal.jpg" alt="Hossain Mohammad Faysal">
-  <figcaption>Hossain Mohammad Faysal</figcaption>
+  <img src="{{ site.url }}/images/me_home_pc.jpg" alt="Marco Fargetta">
+  <figcaption>Marco Fargetta</figcaption>
 </figure>
 
 {% assign total_words = 0 %}
