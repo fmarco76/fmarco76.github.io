@@ -97,6 +97,8 @@ The mapping is done in a `policy.json` file like this
 - Identity information can be maintained in a external server
     - LDAP and Active Directory can be associated to Keystone 
 
+
+
 ## User Authentication
 
 - Default authentication based on **_username_** and **_password_**
