@@ -84,18 +84,20 @@ The mapping is done in a `policy.json` file like this
 
 - It is possible to organise entry points in regions
 
+- The Identity Service also maintains a user that corresponds to each service, such as, a user named nova for the Compute service, and a special service tenant called service
+
 
 
 ## Modular architecture
 
 - Default installation require a *MySql* database to store identity and other information
 
-- Back-end module are divided in identity and assignments
-    - *Identity* stores users and groups
-    - *Assignment* stores domains, projects, roles and role assignment 
+- Back-end module is divided in identity and assignments
+    - **Identity** stores users and groups
+    - **Assignment** stores domains, projects, roles and role assignment 
 
 - Identity information can be maintained in a external server
-    - LDAP and Active Directory can be associated to Keystone 
+    - *LDAP and Active Directory can be associated to Keystone*
 
 
 
@@ -103,4 +105,89 @@ The mapping is done in a `policy.json` file like this
 
 - Default authentication based on **_username_** and **_password_**
 
-- Credentials maintained in a database or retrieved from a corporate directory service
+- Credentials maintained in the database or retrieved from the corporate directory service
+
+
+
+## Token
+
+- If the user is authenticate a token is released
+
+- The token can be *scoped* or *unscoped*
+    - Scoped token are associated to a specific project
+    - Unscoped token are generally released with the credentials and used to retrive scoped token
+
+- The token identify the user and his/her roles inside OpenStack
+
+
+## Token format
+
+- Two main types of token: **UUID** and **PKI**
+    - UUID tokens contain only an id which keystone can use to retrieve information
+    - PKI tokens are documents with all the information signed with a x509 certificate
+
+- In both case the token is bearer: <span style="color:#F00;">**who get the token is the user**</span>
+
+
+## Which token format to use
+
+- Default is PKI
+
+- UUID tokens require more communication with keystone because services need to retrieve the user and the roles associated
+
+- PKI tokens are much bigger so the will consume some bandwidth and computing power for the verification
+
+- PKI should be preferred but it need to evaluated according to the site requirements
+
+
+
+## External authentication
+
+- Username and password are not the only alternatives
+
+- If executed behind a web server it is possible to use any authentication system supported using the external authentication plug-in
+    - The plug-in read the information of the `REMOTE_USER` variable
+
+- The user has to exist in the back-end
+
+
+## Federated authentication
+
+- In Juno release a new plug-in was introduced to allow SAML based authentication
+
+- Several limitation in real use:
+    - Supports only ECP profile: <span style="color: #B26">available only from command line</span>
+    - Requires the manual registration of all the IdPs in federation
+    - Attribute maps not flexible
+        - no regular expression and/or other mechanisms to manipulate the information
+
+
+## Next release
+
+- Federation plug-in revised in Kilo
+
+- Support for WEB SSO included
+
+- More freedom to link IdPs with mapping rules
+
+- Support for Open-ID integrated
+
+
+## Enabling the federation
+
+- Authentication has to be managed by a web server
+    - From Kilo it is recommended to run keystone behind a web server and in future this will be the only option
+
+- Keystone plug-in retrieve the user information from the server and create a token
+    - SAML attributes are translated inside keystone (generating user name, roles, etc...) using a map file
+
+- IdPs and mapping need to be registered before they can be used for authentication
+
+
+
+## Interacting with keystone: CLI
+
+
+## Interacting with keystone: Dashboard
+
+![OpenStack dashboard](images/dashboard.png)
