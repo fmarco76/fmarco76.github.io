@@ -187,7 +187,55 @@ The mapping is done in a `policy.json` file like this
 
 ## Interacting with keystone: CLI
 
+- Previous version of Keystone use the `keystone` client. Es.
+
+```
+$ openstack user-list
+$ openstack user-create --name user1 --email user1@mail.com --enabled true --tenant demo
+```
+
+- From Juno the CLI of all services move to the `openstack` client
+    - In Kilo the `keystone` client is deprecated
+    - Documentation is not yet fully updated. You will find a mix of `keystone` and `openstack` commands in the examples
+
+
+## CLI Example
+
+```
+$ export OS_AUTH_PLUGIN=v3password
+$ export OS_PROJECT_NAME=demo
+$ export OS_IDENTITY_API_VERSION=3
+$ export OS_AUTH_URL=https://burns.ct.infn.it/v3
+$ export OS_USERNAME=admin
+$
+$ openstack user list
++----------------------------------+--------+
+| ID                               | Name   |
++----------------------------------+--------+
+| 3c5ee67480ce4001b056b1e58cb903ee | glance |
+| 4abd9c11badb47a08f4958766a44e33e | nova   |
+| 591fe065f7b04cd58809ca541c52d8a1 | cinder |
+| 6aa1c5b53ad645f5b417971ba2d9a345 | admin  |
+| 9951e0be26374b6b8571fb57c672dc82 | demo   |
++----------------------------------+--------+
+$ 
+```
+
+
 
 ## Interacting with keystone: Dashboard
 
 ![OpenStack dashboard](images/dashboard.png)
+
+
+
+## References
+
+- OpenStack Cloud Administrator Guide [http://docs.openstack.org/admin-guide-cloud/content/index.html](http://docs.openstack.org/admin-guide-cloud/content/index.html)
+
+- OpenStack Admin User Guide [http://docs.openstack.org/user-guide-admin/content/index.html](http://docs.openstack.org/user-guide-admin/content/index.html)
+
+
+
+
+<span style="font-size: 300%; font-weight: bold">Thanks!!!</span>
