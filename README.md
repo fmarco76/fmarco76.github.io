@@ -1,9 +1,9 @@
 # fmarco76 blog 
 
-This is blog of different activities performed in the context of my work.
+This is a blog of different activities performed in the context of my work.
 
 
-You can see the live demo of this theme at [http://blog-olakara.rhcloud.com](http://blog-olakara.rhcloud.com)
+You can see the live demo of this theme at [http://fmarco76.github.io](http://fmarco76.github.io)
 
 ## Author
 
