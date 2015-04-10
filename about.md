@@ -55,7 +55,7 @@ Since 2007 I have been involved in different projects at national and internatio
 - the RECAS and PRISMA (currently involved) projects, funded by the Italian PONREC activity.
 
 The activity performed in the context of the Ph.D. and the following projects is documented by many publications in international conferences, journals and books.
-An updated list is available in my [google scholar page](http://scholar.google.com)
+An updated list is available in my [google scholar page](https://scholar.google.com/citations?user=NenMzJEAAAAJ&hl=en)
 
 Currently I am working at [INFN](http://www.infn.it) in Catania for the European project
 INDIGO-Datacloud and I am also the technical manager of the [GrIDP Identity Federation](http://gridp.garr.it),
