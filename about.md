@@ -47,11 +47,13 @@ My research activity started with the Ph.D. in 2003 and initially was focused on
 have expanded into security, authentication and authorisation aspects of distributed computing environments, including grid and clouds.
 
 Since 2007 I have been involved in different projects at national and international levels. These include:
-- the  [TriGrid VL project](http://www.trigrid.it), funded by the Sicilian Regional Government, as member of the University of Catania, Department of Mathematics;
-- the  ICEAGE project with the Department of Physics and Astronomy, funded by the European Union;
-- the PI2S2 project, funded by the regional government, with Consorzio COMETA (an organization owned by all University and research centre in Sicily);
-- the EUAsiaGrid and DECIDE projects, funded by European Union, with INFN;
-- the RECAS and PRISMA (currently involved) projects, funded by the Italian PONREC activity.
+
+* the [TriGrid VL project](http://www.trigrid.it), funded by the Sicilian Regional Government, as member of the University of Catania, Department of Mathematics;
+* the  ICEAGE project with the Department of Physics and Astronomy, funded by the European Union;
+* the PI2S2 project, funded by the regional government, with Consorzio COMETA (an organization owned by all University and research centre in Sicily);
+* the EUAsiaGrid and DECIDE projects, funded by European Union, with INFN;
+* the RECAS and PRISMA (currently involved) projects, funded by the Italian PONREC activity.
+
 
 The activity performed in the context of the Ph.D. and the following projects is documented by many publications in international conferences, journals and books.
 An updated list is available in my [google scholar page](https://scholar.google.com/citations?user=NenMzJEAAAAJ&hl=en)
