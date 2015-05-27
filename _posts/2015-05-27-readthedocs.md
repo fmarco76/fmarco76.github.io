@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Single Read the Docs documentation for multiple repositories
+title:  Single documentation for multiple git repositories using Read the Docs
 date:   2015-05-27 15:30:00
 description:
 headline:
