@@ -13,7 +13,7 @@ comments: true
 share: true
 ---
 
-Sometime is more convenient to organise a project in multiple repositories because
+Sometimes it is more convenient to organise a project in multiple repositories because
 it includes different parts that could be used separately. However, the documentation
 should remain for the whole project although the source files (I am supposing you
   are using RestructuredText or MarkDown to document your code)
