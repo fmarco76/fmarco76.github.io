@@ -46,7 +46,7 @@ build process and will generate the TOC. An example if index.rst is:
     .. toctree::
        :maxdepth: 2
 
-       sumodule1/docs/index
+       submodule1/docs/index
        submodule2/docs/index
 
 You have to replace the name of the submodule and the path to the index file with
