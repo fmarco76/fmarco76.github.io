@@ -2,6 +2,7 @@
 layout: post
 title:  Single documentation for multiple git repositories using Read the Docs
 date:   2015-05-27 15:30:00
+modified: 2015-06-01
 description:
 headline:
 tags: [git,readthedocs]
@@ -13,13 +14,16 @@ comments: true
 share: true
 ---
 
-Sometimes it is more convenient to organise a project in multiple repositories because
-it includes different parts that could be used separately. However, the documentation
-should remain for the whole project although the source files (I am supposing you
+Sometimes it is more convenient to organise a project in multiple repositories, such as
+in the case it is made of many self-consistent parts which could be used separately.
+Therefore, each component needs its documentation and at the same time the overall documentation
+should remain for the whole project. Since the documentation source files (I am supposing you
   are using RestructuredText or MarkDown to document your code)
-of the documentation are distributed among the repositories. This allows the developers
+are distributed among different the repositories the main project needs to refer to
+these files without duplications. This allows the developers
 to update the documentation of the components they are working on directly and
-without interfere with others but at the same time generate the documentation for the entire project.
+without interfere with others but at the same time generate the documentation for the
+whole project.
 
 If you are using Sphinx or a service like [Read the Docs](http://https://readthedocs.org)
 which use it behind the scene, it is possible to easily generate the overall documentation.
