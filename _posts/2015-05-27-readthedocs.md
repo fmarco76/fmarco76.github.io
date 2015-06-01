@@ -19,11 +19,8 @@ in the case it is made of many self-consistent parts which could be used separat
 Therefore, each component needs its documentation and at the same time the overall documentation
 should remain for the whole project. Since the documentation source files (I am supposing you
   are using RestructuredText or MarkDown to document your code)
-are distributed among different the repositories the main project needs to refer to
-these files without duplications. This allows the developers
-to update the documentation of the components they are working on directly and
-without interfere with others but at the same time generate the documentation for the
-whole project.
+are distributed among different repositories, the main project needs to refer to
+these files without duplications.
 
 If you are using Sphinx or a service like [Read the Docs](http://https://readthedocs.org)
 which use it behind the scene, it is possible to easily generate the overall documentation.
